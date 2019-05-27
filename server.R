@@ -8,7 +8,7 @@ shinyServer(function(input, output,session) {
   
   gdatatitle <-gs_key("1iIn5-NFevKpSrqUMCn1_CY5yFPaYNcinQuvhVk7G0Lw")
   df<- gs_read(gdatatitle)
-  browser()
+  #browser()
   names(df)[names(df)=="Udarbejdet for"]<-"UdarbejdetFor"
   names(df)[names(df)=="Størrelse på restaureret område"]<-"Omraade"
   names(df)[names(df)=="Entreprenør"]<-"Entreprenoer"
